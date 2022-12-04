@@ -3,9 +3,9 @@ package com.fatemehmsp.buildsrc
 
 object AndroidxDependencies {
     object Versions {
-        const val appCompat = "1.5.1"
-        const val constraintLayout = "2.1.4"
-        const val coreKtx = "1.7.0"
+        const val appCompat = "1.2.0"
+        const val constraintLayout = "2.0.4"
+        const val coreKtx = "1.3.2"
         const val recyclerView = "1.1.0"
         const val annotation = "1.1.0"
         const val fragmentKtx = "1.3.0"

@@ -2,7 +2,7 @@ package com.fatemehmsp.buildsrc
 
 object KotlinCoroutinesDependencies {
     object Versions {
-        const val coroutine = "1.6.4"
+        const val coroutine = "1.3.7"
     }
 
     val coroutineAndroid =

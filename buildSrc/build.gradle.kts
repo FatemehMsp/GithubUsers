@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.config.KotlinCompilerVersion
 
 plugins {
     `kotlin-dsl`
-    kotlin("jvm") version "1.6.21"
+    kotlin("jvm") version "1.4.21"
 }
 
 /**
@@ -10,7 +10,7 @@ plugins {
  */
 
 repositories {
-    jcenter()
+    mavenCentral()
 }
 
 

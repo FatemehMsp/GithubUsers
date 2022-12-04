@@ -54,6 +54,10 @@ dependencies {
 
     implementation(fileTree(mapOf("dir" to "libs", "include" to "*.jar")))
 
+    implementation(project(":data"))
+    implementation(project(":domain"))
+    implementation(project(":presentation"))
+
     implementation(AndroidxDependencies.appCompat())
     implementation(AndroidxDependencies.constraintLayout())
 
