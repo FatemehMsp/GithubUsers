@@ -24,6 +24,6 @@ abstract class PaginationScrollListener(var layoutManager: LinearLayoutManager)
     abstract fun loadMoreItems()
 
     companion object{
-        private const val PAGE_SIZE =15
+        private const val PAGE_SIZE = 25
     }
 }

@@ -47,15 +47,39 @@
         />
 
     <TextView
+        android:id="@+id/txt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/img_avatar"
+        tools:text ="fatemeh"
+        />
+
+    <TextView
         android:id="@+id/txt_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginTop="@dimen/_15sdp"
-        android:textSize="@dimen/_25sdp"
+        android:textSize="@dimen/_15sdp"
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/img_avatar"
+        app:layout_constraintTop_toBottomOf="@id/txt_login"
         tools:text ="fatemeh"
+        />
+
+    <TextView
+        android:id="@+id/txt_bio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textSize="@dimen/_15sdp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/txt_name"
+        tools:text ="bio"
         />
 
 
@@ -63,22 +87,38 @@
         android:id="@+id/txt_followers"
         style="@style/TextViewStyle"
         android:text="@string/Followers"
-        app:layout_constraintTop_toBottomOf="@id/txt_name"
+        android:layout_marginStart="@dimen/_20sdp"
+        app:layout_constraintTop_toBottomOf="@id/txt_bio"
         app:layout_constraintStart_toStartOf="parent"
         />
-
-
+ <TextView
+        android:id="@+id/txt_followers_value"
+        style="@style/TextViewStyle"
+        android:text="@string/Followers"
+        app:layout_constraintTop_toBottomOf="@id/txt_followers"
+        app:layout_constraintStart_toStartOf="@id/txt_followers"
+        app:layout_constraintEnd_toEndOf="@id/txt_followers"
+        tools:text="15"
+     />
 
     <TextView
         android:id="@+id/txt_followings"
         style="@style/TextViewStyle"
         android:text="@string/Followings"
         android:layout_marginEnd="@dimen/_20sdp"
-        app:layout_constraintTop_toBottomOf="@id/txt_name"
+        app:layout_constraintTop_toBottomOf="@id/txt_bio"
         app:layout_constraintEnd_toEndOf="parent"
         />
 
 
-
+    <TextView
+        android:id="@+id/txt_followings_value"
+        style="@style/TextViewStyle"
+        android:text="@string/Followers"
+        app:layout_constraintTop_toBottomOf="@id/txt_followings"
+        app:layout_constraintStart_toStartOf="@id/txt_followings"
+        app:layout_constraintEnd_toEndOf="@id/txt_followings"
+        tools:text="15"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

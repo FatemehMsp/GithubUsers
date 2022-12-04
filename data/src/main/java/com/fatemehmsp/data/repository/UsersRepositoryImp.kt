@@ -2,7 +2,9 @@ package com.fatemehmsp.data.repository
 
 import com.fatemehmsp.data.datasource.remote.UsersDataSource
 import com.fatemehmsp.data.entity.mapper.toDomain
+import com.fatemehmsp.domain.model.UserInfoDomainModel
 import com.fatemehmsp.domain.repository.UsersRepository
+import com.fatemehmsp.domain.request.UserInfoRequest
 import com.fatemehmsp.domain.request.UserRequest
 import javax.inject.Inject
 
@@ -12,4 +14,7 @@ class UsersRepositoryImp @Inject constructor(
 
     override suspend fun getUserList(userRequest: UserRequest) =
         usersDataSource.getUserList(userRequest).map { it.toDomain() }
+
+    override suspend fun getUserInfo(userInfoRequest: UserInfoRequest): UserInfoDomainModel =
+        usersDataSource.getUserInfo(userInfoRequest).toDomain()
 }
