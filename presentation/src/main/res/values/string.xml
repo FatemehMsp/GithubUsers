@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="Followers">Followers</string>
+    <string name="Followings">Followings</string>
+    <string name="app_name">Github Users</string>
+
+    <string name="browser_not_founded">Browser Not Founded</string>
+</resources>
